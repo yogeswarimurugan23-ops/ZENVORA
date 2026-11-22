@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d1b">
+  <meta name="description" content="ZENVORA — Where Every Click Feels Premium.">
+  <title>ZENVORA – Where Every Click Feels Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="loader"><div class="loader-logo">ZENVORA<span>.</span></div><div class="loader-bar"><i></i></div><small>PREPARING YOUR EXPERIENCE</small></div>
+  <header class="header">
+    <div class="header-inner wrap">
+      <a href="#/" class="logo">ZEN<span>VORA</span><i>.</i></a>
+      <nav id="nav" class="nav">
+        <a href="#/" data-route="home">Home</a>
+        <a href="#/shop" data-route="shop">Shop</a>
+        <a href="#/categories" data-route="categories">Categories</a>
+        <a href="#/shop/new" data-route="shop/new">New Arrivals</a>
+        <a href="#/shop/best" data-route="shop/best">Best Sellers</a>
+        <a href="#/about" data-route="about">About Us</a>
+      </nav>
+      <div class="header-tools">
+        <button class="tool-btn" data-action="search" aria-label="Search">⌕</button>
+        <button class="tool-btn" data-action="wishlist" aria-label="Wishlist">♡<b id="wishlist-count">0</b></button>
+        <button class="tool-btn" data-action="cart" aria-label="Shopping cart">▢<b id="cart-count">0</b></button>
+        <button class="tool-btn mobile-menu" data-action="menu" aria-label="Menu">☰</button>
+      </div>
+    </div>
+    <div class="search-panel" id="search-panel">
+      <div class="wrap search-inner"><input id="search-input" type="search" placeholder="Search products..." autocomplete="off"><button data-action="clear-search">Clear</button></div>
+    </div>
+  </header>
+
+  <main id="app">
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> THE NEXT WAY TO SHOP</div>
+        <h1>Discover a world<br><em>beyond shopping.</em></h1>
+        <p>Explore exceptional finds, discover new trends, and make every purchase feel extraordinary.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#/shop">Explore collection <b>↗</b></a><a class="btn btn-outline" href="#/categories">Browse categories</a></div>
+        <div class="hero-note"><span class="note-icon">✦</span><span><b>Curated for curious minds</b><small>Thoughtful finds for everyday life.</small></span></div>
+      </div>
+      <div class="hero-visual" id="hero-visual">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div><div class="visual-glow"></div>
+        <div class="hero-object" id="hero-object"><div class="object-face face-front">Z</div><div class="object-face face-back">✦</div><div class="object-face face-right">ZEN</div><div class="object-face face-left">VORA</div><div class="object-face face-top">✧</div><div class="object-face face-bottom">Z</div></div>
+        <div class="floating-label label-top"><b>✧</b><span>Fresh discoveries<small>Picked for you</small></span></div>
+        <div class="floating-label label-bottom"><b>↗</b><span>Everyday favorites<small>One place to explore</small></span></div>
+        <span class="sparkle sparkle-a">✦</span><span class="sparkle sparkle-b">✧</span>
+      </div>
+      <div class="hero-foot"><span>01 — DISCOVER</span><i></i><span>SHOP THE EXTRAORDINARY</span></div>
+    </section>
+
+    <div class="ticker"><div>STYLE <b>✦</b> TECH <b>✦</b> EVERYDAY ESSENTIALS <b>✦</b> NEW DISCOVERIES <b>✦</b> STYLE <b>✦</b> TECH <b>✦</b> EVERYDAY ESSENTIALS <b>✦</b></div></div>
+
+    <section class="section wrap" id="categories">
+      <div class="section-head"><div><div class="eyebrow">FIND YOUR NEXT FAVORITE</div><h2>Shop by <em>category.</em></h2></div><p>A little inspiration for whatever<br>you’re looking for today.</p></div>
+      <div class="category-grid">
+        <button class="category-card cat-tech" data-category="electronics"><span>01</span><b>⌁</b><strong>Electronics</strong><small>Explore ↗</small></button>
+        <button class="category-card cat-jewel" data-category="jewelery"><span>02</span><b>◇</b><strong>Jewelry</strong><small>Explore ↗</small></button>
+        <button class="category-card cat-men" data-category="men's clothing"><span>03</span><b>✳</b><strong>Men's style</strong><small>Explore ↗</small></button>
+        <button class="category-card cat-women" data-category="women's clothing"><span>04</span><b>✿</b><strong>Women's style</strong><small>Explore ↗</small></button>
+      </div>
+    </section>
+
+    <section class="section wrap shop-section" id="shop">
+      <div class="section-head"><div><div class="eyebrow">THE ZENVORA EDIT</div><h2>Find your <em>something.</em></h2></div><p>Good things are waiting.<br>Take a look around.</p></div>
+      <div class="shop-tools">
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all">All products</button><button class="filter" data-filter="electronics">Tech</button><button class="filter" data-filter="jewelery">Jewelry</button><button class="filter" data-filter="men's clothing">Men</button><button class="filter" data-filter="women's clothing">Women</button>
+        </div>
+        <div class="shop-controls">
+          <label class="search-box"><span>⌕</span><input id="inline-search" type="search" placeholder="Search products..."></label>
+          <select id="sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="rating">Top rated</option><option value="az">Name: A to Z</option></select>
+        </div>
+      </div>
+      <div class="result-row"><span id="result-count">Loading products...</span><button id="reset-filters">Clear filters ×</button></div>
+      <div class="product-grid" id="product-grid"><div class="loading"><div class="spinner"></div><p>Finding lovely things for you...</p></div></div>
+      <div id="api-error" class="api-error" hidden>We couldn't load products. Please check your internet connection.<button id="retry">Try again</button></div>
+    </section>
+
+    <section class="promo wrap">
+      <div><div class="eyebrow">A FRESH PERSPECTIVE</div><h2>Make room for<br><em>new favorites.</em></h2><p>Discover pieces that bring a little more joy to your everyday.</p><a href="#/shop/new" class="btn btn-light">Explore the edit ↗</a></div>
+      <div class="promo-art"><div class="promo-ring"></div><div class="promo-cube">Z</div><span>THE NEW<br>STANDARD</span></div>
+    </section>
+
+    <section class="about-section wrap" id="about">
+      <div class="about-symbol">✧</div><div><div class="eyebrow">A BETTER WAY TO DISCOVER</div><h2>Shopping should feel<br><em>like a little discovery.</em></h2></div>
+      <p>ZENVORA brings together everyday essentials and unexpected finds in one easy-to-explore place. Take your time, follow your curiosity, and find something you love.</p>
+    </section>
+  </main>
+
+  <footer class="footer"><a href="#/" class="logo">ZEN<span>VORA</span><i>.</i></a><span>Where Every Click Feels Premium.</span><span>© <span id="year"></span> ZENVORA · Demo storefront</span></footer>
+
+  <div class="backdrop" id="backdrop"></div>
+  <aside class="drawer" id="cart-drawer" aria-hidden="true"><div class="drawer-head"><div><div class="eyebrow">YOUR SELECTION</div><h3>Your cart <small id="drawer-count">(0)</small></h3></div><button class="close" data-action="close">×</button></div><div class="drawer-body" id="cart-items"></div><div class="drawer-footer" id="cart-footer"><div class="price-line"><span>Subtotal</span><b id="subtotal">₹0.00</b></div><div class="price-line muted"><span>Estimated tax (5%)</span><span id="tax">₹0.00</span></div><div class="price-line muted"><span>Shipping</span><span id="shipping">₹0.00</span></div><div class="price-line total"><span>Total</span><b id="total">₹0.00</b></div><button class="btn btn-primary full" id="checkout">Continue to checkout ↗</button><small class="demo-note">Demo storefront. No real payments or orders.</small></div></aside>
+  <aside class="drawer" id="wishlist-drawer" aria-hidden="true"><div class="drawer-head"><div><div class="eyebrow">SAVED FOR LATER</div><h3>Your wishlist</h3></div><button class="close" data-action="close">×</button></div><div class="drawer-body" id="wishlist-items"></div></aside>
+  <div class="modal-wrap" id="quick-modal"><div class="modal"><button class="close modal-x" data-action="close">×</button><div id="quick-content"></div></div></div>
+  <div class="modal-wrap" id="checkout-modal"><div class="modal checkout-modal"><button class="close modal-x" data-action="close">×</button><div id="checkout-content"></div></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="./js/app.js"></script>
+</body>
+</html>
